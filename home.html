@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delibo Market</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body onload="updateGreeting(); updateTime();">
+    <div class="header">
+        <div>
+            <h1>HELLO DELIBOVERSS,,</h1>
+            <div id="greeting" class="greeting"></div>
+            </div>
+            <div id="time"></div>
+</div>
+
+    <!-- Container utama -->
+    <div class="container">
+        <h2 id="greeting"></h2>
+        <div class="content">
+
+            <h2>Tentang Kami</h2>
+            <p>Delibo Market adalah [deskripsikan bisnis Anda]...</p>
+
+            <h2>Produk & Layanan</h2>
+            <ul>
+                <li>[Produk utama]</li>
+                <li>[Keunggulan dibanding kompetitor]</li>
+                <li>[Promo khusus jika ada]</li>
+            </ul>
+
+            <h2>Kontak & Sosial Media</h2>
+            <ul>
+                <li>Alamat: [Isi Alamat]</li>
+                <li>Telepon: [Nomor kontak]</li>
+                <li>Email: [Alamat email]</li>
+                <li>Website: [URL jika ada]</li>
+                <li>Instagram: @delibo.ofc</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bottom-nav">
+        <a href="#" onclick="showPage('home', this)" class="active">
+            <div><img src="home.png" alt="Logo" style="height: 24px;"></div>
+            Home
+        </a>
+        <a href="kasir.html" onclick="showPage('order-form', this)">
+            <div><img src="order.png" alt="Logo" style="height: 24px;"></div>
+            Kasir Form
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

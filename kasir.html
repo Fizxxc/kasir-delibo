@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delibo Kasir</title>
+    <link rel="stylesheet" href="kasir.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body onload="updateGreeting(); updateTime();"></body>
+<div class="header">
+    <div>
+        <p><b>INDONESIAN REALTIME</b></p>
+        </div>
+        <div id="time"></div>      
+</div>
+    <div class="container">
+        <a href="home.html" class="back-button">
+            &#8592; Back
+        </a>  
+        <main>
+            <div class="card">
+                <h1>DLB KASIR</h1>
+
+                <div class="info">
+                    <p>Order ID</p>
+                    <input type="text" id="orderId" class="box" readonly>
+                </div>
+
+                <div class="info">
+                    <p>Product Name</p>
+                    <input type="text" id="productName" class="box">
+                </div>
+
+                <div class="info">
+                    <p>Item Pesanan</p>
+                    <input type="number" id="itemQty" class="box" min="1" value="1">
+                </div>
+
+                <div class="info">
+                    <p>Harga Satuan</p>
+                    <input type="number" id="itemPrice" class="box" min="0" value="0">
+                </div>
+
+                <div class="total-box">
+                    <div class="split">
+                        <p>Subtotal</p>
+                        <p id="subtotal">0</p>
+                    </div>
+                    <div class="split">
+                        <p>Pajak (1%)</p>
+                        <p id="tax">0</p>
+                    </div>
+                    <div class="split">
+                        <p>Total</p>
+                        <p id="total">0</p>
+                    </div>
+                    <div class="split">
+                        <p>Tunai</p>
+                        <input type="number" id="cash" class="box" min="0">
+                    </div>
+                </div>
+
+                <h2>Kembalian</h2>
+                <div class="box" id="change">0</div>
+
+                <div class="btn-group">
+                    <button id="btnGenerate">🔄 Buat Struk</button>
+                    <button class="btnDownload">📥Download</button>
+                    <button class="btnCetak">📝Cetak</button>
+                </div>
+            </div>
+
+            <div id="outputStruk"></div>
+        </main>
+        <footer>
+            <p>© 2025 Delibo Market. All Rights Reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="kasir.js"></script>
+</body>
+</html>
