@@ -21,27 +21,43 @@
         <main>
             <div class="card">
                 <h1>DLB KASIR</h1>
-
+        
                 <div class="info">
                     <p>Order ID</p>
                     <input type="text" id="orderId" class="box" readonly>
                 </div>
-
+        
                 <div class="info">
                     <p>Product Name</p>
                     <input type="text" id="productName" class="box">
                 </div>
-
+        
                 <div class="info">
                     <p>Item Pesanan</p>
                     <input type="number" id="itemQty" class="box" min="1" value="1">
                 </div>
-
+        
                 <div class="info">
                     <p>Harga Satuan</p>
                     <input type="number" id="itemPrice" class="box" min="0" value="0">
                 </div>
-
+        
+                <button id="btnTambah">➕ Tambah Pesanan</button>
+        
+                <h2>Daftar Pesanan</h2>
+                <table id="orderList">
+                    <thead>
+                        <tr>
+                            <th>Produk</th>
+                            <th>Qty</th>
+                            <th>Harga</th>
+                            <th>Subtotal</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+        
                 <div class="total-box">
                     <div class="split">
                         <p>Subtotal</p>
@@ -60,19 +76,20 @@
                         <input type="number" id="cash" class="box" min="0">
                     </div>
                 </div>
-
+        
                 <h2>Kembalian</h2>
                 <div class="box" id="change">0</div>
-
+        
                 <div class="btn-group">
                     <button id="btnGenerate">🔄 Buat Struk</button>
-                    <button class="btnDownload">📥Download</button>
-                    <button class="btnCetak">📝Cetak</button>
+                    <button class="btnDownload">📥 Download</button>
+                    <button class="btnCetak">📝 Cetak</button>
                 </div>
             </div>
-
+        
             <div id="outputStruk"></div>
         </main>
+        
         <footer>
             <p>© 2025 Delibo Market. All Rights Reserved.</p>
         </footer>
